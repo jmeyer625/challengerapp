@@ -1,0 +1,9 @@
+{% if challenges %}
+<ul>
+	{% for challenge in challenges %}
+	<li><a href="{% url 'challengerapp:challenge_detail' challenge.id %}">{{ challenge.title }}</a></li>
+	{% endfor %}
+</ul>
+{% else %}
+<p>There are no challenges</p>
+{% endif %}
