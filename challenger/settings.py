@@ -27,7 +27,7 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 # Application definition
-
+CRISPY_TEMPLATE_PACK = "foundation-5"
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 INSTALLED_APPS = (
@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy-forms'
+    'crispy_forms',
+    'crispy_forms_foundation',
 )
 
 MIDDLEWARE_CLASSES = (
